@@ -1,0 +1,69 @@
+/* 
+     Theme Name: mixergy62
+     Theme URL: http://www.pallian.com
+     Description: mixergy61 plus WPE in footer
+     Author: Adarsh Pallian
+     Author URI: http://pallian.com
+     Version: 0.31
+*/
+/* Import Base Modules */
+@import "./base.css";
+/* Import Grid Modules */
+@import "./grid.css";
+
+/* Update for IE8 */
+/* 
+ * @author Austin Passy
+ * @link: http://frostywebdesigns.com
+ */
+div #newsletter form {
+	position: relative;
+}
+div #newsletter form table {
+	position: absolute;
+}
+div #newsletter form table input {
+	position: relative;
+}
+div#body {
+	clear: both;
+}
+.sociable ul li {
+	float: left;
+}
+label {float:none !important; text-align:left !important;}
+
+.wp-caption {
+    border-width: 0.071em;
+    padding: 0.714em;
+}
+.wp-caption.alignright {
+    margin: 0 0 1.571em 1.571em;
+}
+.wp-caption.alignright {
+    float: right;
+}
+.wp-caption {
+    background-color: #eee;
+    border-color: #ddd;
+    border-style: solid;
+    font-style: italic;
+    text-align: center;
+}
+blockquote {
+	padding: 5px;
+}
+
+img.alignright {
+	float: right;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+#header-banner .attachment {
+    display: none;
+}
+
+.wlflist li {
+    list-style: decimal inside none !important;
+}

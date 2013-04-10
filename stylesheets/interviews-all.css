@@ -1,0 +1,22 @@
+#main {
+width: 970px;
+margin: 0;
+border-width: 0;
+float: none;
+padding: 20px 10px 50px 10px;
+}
+
+.dataTables_filter {width:auto;}
+
+tr.odd{ background-color: #eff3f9;}
+tr.odd td.sorting_1 {
+background-color: #D7DBE0;
+}
+tr.even td.sorting_1 {
+background-color: #FAFBFD;
+}
+
+table.display td {
+	padding-top:10px;
+	padding-bottom:10px;
+}

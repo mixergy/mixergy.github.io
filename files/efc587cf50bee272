@@ -1,0 +1,32 @@
+
+
+
+
+
+document.write('<img width="1" height="1" src="http://pixel.rubiconproject.com/tap.php?v=7430&nid=2238&put=4a8664eb-77d4-4948-b71b-933cad4e542b&expires=360"/>');
+
+
+document.write('<img width="1" height="1" src="http://tag.admeld.com/match?admeld_adprovider_id=613&external_user_id=4a8664eb-77d4-4948-b71b-933cad4e542b"/>');
+
+
+
+document.write('<img width="1" height="1" src="http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZqcz0xJmNvZGU9MTk2OSZ0bD0yNTkyMDA=&piggybackCookie=4a8664eb-77d4-4948-b71b-933cad4e542b"/>');
+
+
+document.write('<img width="1" height="1" src="http://r.openx.net/set?pid=b4334653-6527-d6ac-60ea-5c09037709c8&rtb=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+document.write('<img width="1" height="1" src="http://ad.360yield.com/match?publisher_dsp_id=7&external_user_id=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+
+document.write('<img width="1" height="1" src="http://ad.crwdcntrl.net/5/c=1389/pe=y?http%3A%2F%2Fpixel.sitescout.com%2Fdmp%2Fset%3Fprovider%3D1%26audiences%3D%24%7Baud_ids%7D" />');
+
+document.write('<img width="1" height="1" src="http://ums.adtechus.com/mapuser?providerid=1002;userid=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+document.write('<img width="1" height="1" src="http://ums.adtech.de/mapuser?providerid=1002;userid=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+document.write('<img width="1" height="1" src="http://dis.criteo.com/pump/match.aspx?c=15&uid=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+document.write('<img width="1" height="1" src="http://bh.contextweb.com/bh/rtset?do=add&pid=543793&ev=4a8664eb-77d4-4948-b71b-933cad4e542b" />');
+
+
+

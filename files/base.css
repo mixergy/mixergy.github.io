@@ -1,0 +1,101 @@
+/* Reset */
+h1,h2,h3,h4,h5,h6,address,blockquote,div,p,pre,body,dl,dt,dd,ol,ul,li { margin: 0; padding: 0; }
+
+/* Structure Module */
+html, body { width: 100%; height: 100%; margin: 0 0 1px 0; background: #f0f0f0; }
+body { font-family: 'Lucida Grande', sans-serif; color: #1a1a1a; font-size: 12px; line-height: 17px; overflow:hidden;overflow-y:scroll; }
+
+/* Text Module */
+abbr, acronym { border-bottom: 1px dotted #aaa; }
+address, cite, dfn, em, var { font-style: italic; }
+code, kbd, samp, pre { font-family: 'Courier New', monospace; }
+blockquote { background: #eee; }
+strong { font-weight: bold; }
+#stuff h3 { font: 800 18px Helvetica, Arial, sans-serif; color: #0477ad; padding: 10px 0; margin: 0 0 20px; }
+
+/* Hypertext Module */
+a:link    { color: #111; text-decoration: none; font-weight: 800; }
+a:visited { color: #222; text-decoration: underline; }
+a:hover   { color: #111; text-decoration: underline; }
+a:active  { color: #000; text-decoration: underline; }
+
+/* List Module */
+ol, ul    { padding: 0px; }
+ol li     { list-style: decimal inside none; }
+ul li     { list-style: none inside none; }
+
+/* Edit Module */
+del { text-decoration: line-through; }
+ins { text-decoration: none; }
+
+/* Form Module */
+form      { margin: 0; padding: 0; }
+fieldset  { margin: 0; padding: 13px; border: 1px solid #000; }
+legend    { font-size: 22px; }
+label     { display: block; width: 150px; margin: 7px 0 0; padding: 0; text-align: right; float: left; }
+label:first-letter { text-decoration: underline; }
+input, textarea { width: auto; margin: 0; }
+
+/* Image Module */
+img { border: 0; vertical-align: bottom; padding: 10px 0; }
+a img { border: 0; }
+
+/* Cheat Sheet CSS */
+dl.table-display {
+	float: left;
+	width: 520px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff; 
+}
+.post .entry h2.tacticname {
+	width: 510px;
+	background-color: #fff; 
+/*	background-color: #e3f2f9; */
+	margin: 10px 0 0;
+	padding: 5px;
+}
+.table-display dt {
+	clear: left;
+	float: left;
+	width: 100px;
+	margin: 0;
+	padding: 5px;
+	font-weight: bold;
+}
+.table-display dd {
+	float: left;
+	width: 400px;
+	margin: 0;
+	padding: 5px;
+}
+/* icon CSS */
+.iconcontainer {
+float: right;
+width: 65px;
+padding-bottom: 5px;
+padding-top: 5px;
+border-left: 1px #ccc solid;
+}
+.posticon {
+float: right;
+padding: 0;
+}
+.iconlabel {
+float: right;
+font-size: 12px;
+font-family: Arial;
+text-align: center;
+clear: right;
+width: 55px;
+font-variant: small-caps;
+color: #314a84;
+line-height: 14px;
+}
+
+a.iconlabel {
+    color: #314A84;
+    text-decoration: none;
+	font-weight:normal;
+}
+
