@@ -76,10 +76,10 @@
   <script type="text/javascript" async="" src="./files/plusone.js" gapi_processed="true">
 </script>
 -->
-<!--
+
   <script type="text/javascript" src="./files/jquery.js">
 </script>
--->
+
   <!--<script type="text/javascript" src="./files/sharebar.js">
 </script>-->
   <script type="text/javascript" src="./files/sociable.js">
@@ -258,16 +258,10 @@
 
 
 
-
-<link rel="stylesheet" href="./datatables/css/demo_table.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="./stylesheets/interviews-all.css" type="text/css" media="screen" />
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="//datatables.net/download/build/jquery.dataTables.nightly.js"></script>
-<!--
-  <script type="text/javascript" async="" src="./datatables/js/jquery.js"></script>
-	<script type="text/javascript" async="" src="./datatables/js/jquery.dataTables.js"></script>
--->
+  <!-- DATA TABLES -->
+  <link rel="stylesheet" href="./datatables/css/demo_table.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="./stylesheets/interviews-all.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="./datatables/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" charset="utf-8">
 		jQuery(document).ready(function($) {
 			var oDataTable = $('#mixergydata').dataTable( {
@@ -290,7 +284,6 @@
         oDataTable.fnFilter(hash_decoded);
         $('.dataTables_filter').find('input').val(hash_decoded);
       }
-      
 		} );
 	</script>
 </head>
