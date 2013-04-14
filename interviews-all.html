@@ -259,8 +259,8 @@
 
 
 
-	<link rel="stylesheet" href="./datatables/css/demo_table.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="./stylesheets/interviews-all.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./datatables/css/demo_table.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./stylesheets/interviews-all.css" type="text/css" media="screen" />
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="//datatables.net/download/build/jquery.dataTables.nightly.js"></script>
@@ -270,11 +270,27 @@
 -->
 	<script type="text/javascript" charset="utf-8">
 		jQuery(document).ready(function($) {
-			$('#example').dataTable( {
-				"aaSorting": [[ 0, "desc" ]],
-        "iDisplayLength": -1,
-        "aLengthMenu": [[10, 50, 100, 500, -1], [10, 50, 100, 500, "All"]]
+			var oDataTable = $('#mixergydata').dataTable( {
+				"aaSorting": [[ 0, "desc" ]], // sort by 1st column
+        "iDisplayLength": -1, // show all results
+        "sDom": '<"top"fi>t<"clear">', // remove pagination and length changing https://www.datatables.net/ref#sDom
+        "oLanguage": { "sSearch": "" }, // remove "Search:" label - http://stackoverflow.com/a/8253038/114140
+        "fnInitComplete": function(oSettings, json) {
+          $('.dataTables_filter').find('input').focus(); // default focus on search input
+        }
+        // Offical support for HTML5 input type "search" is coming... https://github.com/DataTables/DataTables/commit/8d9e620ef2c4e3a1d566ea65728c0f1d69eafabe
+        // $('.dataTables_filter').find('input').attr('type', 'search');
 			} );
+
+      // apply default filtering based on url hash
+      // Can use "+" for spaces e.g http://mixergy.local/interviews-all.html#Timothy+Sykes
+      var hash = location.hash.replace('#', '');
+      if(hash) {
+        hash_decoded = decodeURIComponent((hash+'').replace(/\+/g, '%20'));
+        oDataTable.fnFilter(hash_decoded);
+        $('.dataTables_filter').find('input').val(hash_decoded);
+      }
+      
 		} );
 	</script>
 </head>
@@ -333,9 +349,9 @@
     <div class="container">
       <div id="main">
 
+<h1 class="title instant-search">Instant Search for Mixergy Interviews</h1>
 
-<div id="demo">
-<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="mixergydata">
 	<thead>
 		<tr>
 			<th width="50px">Episode</th>
@@ -1203,7 +1219,7 @@
 		</tr>
 	</tfoot>
 </table>
-			</div>
+
 
 
       </div>
