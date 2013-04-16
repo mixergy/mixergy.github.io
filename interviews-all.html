@@ -258,22 +258,119 @@
 
 
 
-  <!-- DATA TABLES -->
+<!-- 
+START INSTANT SEARCH JS AND CSS
+-->
+
+
+
   <link rel="stylesheet" href="./datatables/css/demo_table.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="./stylesheets/interviews-all.css" type="text/css" media="screen" />
   <script type="text/javascript" src="./datatables/js/jquery.dataTables.min.js"></script>
+
+  <style type="text/css">
+/*<![CDATA[*/
+    #main {
+      width: 970px;
+      margin: 0;
+      border-width: 0;
+      float: none;
+      padding: 20px 10px 50px 10px;
+    }
+
+    h1.instant-search {
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .dataTables_wrapper .top {
+      text-align: center;
+      padding: 15px;
+      background-color: transparent;
+      border-width: 0px;
+    }
+
+    .dataTables_wrapper tr.odd{
+      background-color: #eff3f9;
+    }
+
+    .dataTables_wrapper tr.odd td.sorting_1 {
+      background-color: #D7DBE0;
+    }
+
+    .dataTables_wrapper tr.even td.sorting_1 {
+      background-color: #FAFBFD;
+    }
+
+    .dataTables_wrapper table.display td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .dataTables_info {
+      width: auto; 
+      float: none; 
+      margin-top: 6px;
+    }
+
+    .dataTables_filter label {
+      width: 500px;
+    }
+
+    .dataTables_filter {
+      width: 545px;
+      margin: 0 auto;
+      float: none;
+      text-align: left;
+    }
+
+    .dataTables_filter input {
+      padding: 6px 21px;
+      margin: 0;
+      height: 30px;
+      line-height: 30px;
+      width: 500px;
+      -webkit-border-radius: 22px;
+      -moz-border-radius: 22px;
+      border-radius: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      color: #555555;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+      transition: border linear 0.2s, box-shadow linear 0.2s;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .dataTables_filter input:focus {
+      border-color: rgba(82, 168, 236, 0.8);
+      outline: 0;
+      outline: thin dotted 9;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    }
+/*]]>*/
+  </style>
 	<script type="text/javascript" charset="utf-8">
 		jQuery(document).ready(function($) {
 			var oDataTable = $('#mixergydata').dataTable( {
-				"aaSorting": [[ 0, "desc" ]], // sort by 1st column
-        "iDisplayLength": -1, // show all results
-        "sDom": '<"top"fi>t<"clear">', // remove pagination and length changing https://www.datatables.net/ref#sDom
-        "oLanguage": { "sSearch": "" }, // remove "Search:" label - http://stackoverflow.com/a/8253038/114140
+				"aaSorting": [[ 0, "desc" ]],    // sort by 1st column
+        "iDisplayLength": -1,            // show all results
+        "sDom": '<"top"fi>t<"clear">',   // remove pagination and length changing https://www.datatables.net/ref#sDom
+        "oLanguage": { "sSearch": "" },  // remove "Search:" label - http://stackoverflow.com/a/8253038/114140
         "fnInitComplete": function(oSettings, json) {
           $('.dataTables_filter').find('input').focus(); // default focus on search input
         }
-        // Offical support for HTML5 input type "search" is coming... https://github.com/DataTables/DataTables/commit/8d9e620ef2c4e3a1d566ea65728c0f1d69eafabe
-        // $('.dataTables_filter').find('input').attr('type', 'search');
 			} );
 
       // apply default filtering based on url hash
@@ -286,6 +383,15 @@
       }
 		} );
 	</script>
+
+
+
+<!-- 
+END INSTANT SEARCH JS AND CSS
+-->
+
+
+
 </head>
 
 <body data-twttr-rendered="true">
@@ -342,6 +448,16 @@
     <div class="container">
       <div id="main">
 
+
+
+
+
+
+<!-- 
+START INSTANT SEARCH HTML
+-->
+
+
 <h1 class="title instant-search">Instant Search for Mixergy Interviews</h1>
 
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="mixergydata">
@@ -355,6 +471,11 @@
 	</thead>
 	<tbody>
 
+<tr data-wpid="30555"><td>852</td><td>2013-04-15</td><td><a href="http://mixergy.com/jack-bergman-allied-business-network-interview/">Allied Business Network: The Disadvantage (And Solution) To Being A “Worrier” – with Jack Bergman</a></td><td>Jack Bergman</td></tr>
+<tr data-wpid="30554"><td>851</td><td>2013-04-12</td><td><a href="http://mixergy.com/amit-mehta-moblize-interview/">Finally. An Interview With A Successful Founder Who Talks About His Inner Critic – with Amit Mehta</a></td><td>Amit Mehta</td></tr>
+<tr data-wpid="30553"><td>850</td><td>2013-04-10</td><td><a href="http://mixergy.com/wanderfly-evan-schneyer-interview/">Wanderfly: The Surprising Way To Sell A Company – with Evan Schneyer</a></td><td>Evan Schneyer</td></tr>
+<tr data-wpid="30427"><td>849</td><td>2013-04-08</td><td><a href="http://mixergy.com/anthony-bucci-revzilla-interview/">RevZilla: The Legal Way To Deal With A Patent Troll – with Anthony Bucci</a></td><td>Anthony Bucci</td></tr>
+<tr data-wpid="29704"><td>848</td><td>2013-04-05</td><td><a href="http://mixergy.com/nick-francis-help-scout-interview/">Help Scout: How Does A Founder Find A Startup Idea That Can Get Some Traction? – with Nick Francis</a></td><td>Nick Francis</td></tr>
 <tr data-wpid="30624"><td>847</td><td>2013-04-03</td><td><a href="http://mixergy.com/gagan-biyani-growth-hacker-interview/">This Is How Growth Hacking Got Udemy To A $6 Mil Run Rate - with Gagan Biyani</a></td><td>Gagan Biyani</td></tr>
 <tr data-wpid="30540"><td>846</td><td>2013-04-01</td><td><a href="http://mixergy.com/brian-kaldenberg-proofreadingpal/">ProofreadingPal: Getting Investors To Give You Back Your Business - with Brian Kaldenberg</a></td><td>Brian Kaldenberg</td></tr>
 <tr data-wpid="30461"><td>845</td><td>2013-03-29</td><td><a href="http://mixergy.com/richard-banfield-fresh-tilled-soil-interview/">Fresh Tilled Soil: How To Be A Networking Slut (To Get More Customers) - with Richard Banfield</a></td><td>Richard Banfield</td></tr>
@@ -1212,6 +1333,20 @@
 		</tr>
 	</tfoot>
 </table>
+
+
+
+
+<!-- 
+END INSTANT SEARCH HTML
+-->
+
+
+
+
+
+
+
 
 
 
