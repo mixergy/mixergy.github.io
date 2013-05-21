@@ -24,7 +24,9 @@ jQuery.fn.sharebar = function(options) {
 		else jQuery(sharebar).fadeIn();
 		jQuery.event.add(window, "scroll", sharebar_scroll);
 		jQuery.event.add(window, "resize", sharebar_resize);
-		return jQuery(sharebar).offset().top;
+		if (jQuery(sharebar).offset() != undefined) {
+			return jQuery(sharebar).offset().top;
+		}
 	}
 	function sharebar_resize() {
 		var w = jQuery(window).width();
